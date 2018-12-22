@@ -1,0 +1,61 @@
+html, body {
+	height: 100%;
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+/*	display: flex;
+	justify-content: center;*/
+	padding: 50px;
+}
+.btn-start button:first-child{
+}
+.btn-start button:last-child{
+}
+.btn-start button {
+	height: 30px;
+	padding: 5px;
+	border: none;
+}
+.btn-start button:focus {
+	border:none;
+}
+button#dynamic {
+	background: red;
+	color: white;
+}
+button#static {
+	background: #2196F3;
+	color: white;
+}
+.btn-start:first {
+	margin-left: 20px;
+}
+canvas {
+	border: solid 1px grey;
+	border-top: solid 2px red;
+	border-left: solid 2px green;
+}
+
+.line-y, .line-x {
+	position: relative;
+}
+.line-y {
+	left: -2%;
+    top: 71px;
+    color: grey;
+}
+.line-x {
+    top: 20px;
+    right: 1%;
+    color: grey;
+}
+div.months {
+	margin: 0 0 10px 0;
+}
+div.months span {
+    margin-left: 19px;
+    color: grey;
+    font-size: 14px;
+}
