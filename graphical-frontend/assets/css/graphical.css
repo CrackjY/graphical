@@ -1,0 +1,19 @@
+canvas {
+	border: solid 1px grey;
+	border-top: solid 2px red;
+	border-left: solid 2px green;
+}
+.line-y, .line-x {
+}
+.line-y {
+}
+.line-x {
+}
+div.days {
+	margin: 0 0 10px 0;
+}
+div.days span {
+    margin-left: 19px;
+    color: grey;
+    font-size: 14px;
+}

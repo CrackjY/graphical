@@ -10,7 +10,7 @@
 		let xCount = 0;
 		let yCount = 250;
 
-		while(i < 100000000 && xCount < 1000 && yCount < 500) {
+		while(i < 5 && xCount < 1000 && yCount < 500) {
 
 			chunk.lineTo(xCount, yCount);
 			chunk.strokeStyle = "blue";
@@ -20,7 +20,7 @@
 			console.log('y : ', yCount);
 			
 			i++;
-			xCount += 5;
+			xCount +=32.3;
 			yCount -= Math.random() * 15 - Math.random() * 15;
 		}
 		chunk.stroke();

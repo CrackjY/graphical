@@ -5,18 +5,13 @@ html, body {
 	padding: 0;
 }
 .wrapper {
-/*	display: flex;
-	justify-content: center;*/
 	padding: 50px;
 }
-.btn-start button:first-child{
-}
-.btn-start button:last-child{
-}
-.btn-start button {
-	height: 30px;
+.block-btn button {
 	padding: 5px;
 	border: none;
+	margin-bottom: 5px;
+	color: white;
 }
 .btn-start button:focus {
 	border:none;
@@ -24,38 +19,28 @@ html, body {
 button#dynamic {
 	background: red;
 	color: white;
+	margin-left: 20px;
 }
 button#static {
 	background: #2196F3;
-	color: white;
 }
 .btn-start:first {
-	margin-left: 20px;
 }
-canvas {
+div#block-switch {
+	text-align: center;
+	margin-bottom: 25px;
+	width: ;
+}
+div#block-switch span{
+}
+div#block-switch .chunk {
+    border: solid 1px grey;
+    border-radius: 14px;
+}
+div#block-switch .chunk .sub-chunk {
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
 	border: solid 1px grey;
-	border-top: solid 2px red;
-	border-left: solid 2px green;
-}
-
-.line-y, .line-x {
-	position: relative;
-}
-.line-y {
-	left: -2%;
-    top: 71px;
-    color: grey;
-}
-.line-x {
-    top: 20px;
-    right: 1%;
-    color: grey;
-}
-div.months {
-	margin: 0 0 10px 0;
-}
-div.months span {
-    margin-left: 19px;
-    color: grey;
-    font-size: 14px;
+	background: green;
 }
