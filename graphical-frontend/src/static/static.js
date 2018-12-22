@@ -1,4 +1,6 @@
 (() => {
+	let i = 0;
+	
 	let curveStatic = () => {
 		let chunk = canvas.getContext('2d');
 

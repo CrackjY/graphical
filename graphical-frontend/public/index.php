@@ -24,6 +24,7 @@
 
 		</div>
 
-		<script type="text/javascript" src="../src/main.js"></script>
+		<script type="text/javascript" src="../src/dynamic/dynamic.js"></script>
+		<script type="text/javascript" src="../src/static/static.js"></script>
 	</body>
 </html>

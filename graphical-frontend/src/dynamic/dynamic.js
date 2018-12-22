@@ -1,7 +1,6 @@
 (() => {
 	let canvas = document.getElementById('canvas');
 	let btnStart = document.querySelector('.btn-start');
-	let i = 0;
 	let xCount;
 	let yCount;
 
@@ -14,11 +13,9 @@
 		}
 	}
 
-
-
 	let fetchGraphical = () => {
 
-		fetch('../../backend/data/data.php')
+		fetch('../../graphical-backend/data/data.php')
 			.then(response => response.json())
 			.then((data, index) => {
 
