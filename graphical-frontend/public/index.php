@@ -11,15 +11,15 @@
 		<div class="wrapper">
 
 			<div id="block-switch">
-				<span>Switch</span>
+				<div>Switch</div>
 				<div class="chunk">
 					<div class="sub-chunk"></div>
 				</div>
 			</div>
 
 			<div class="block-btn">
-				<button id="dynamic">Start curve</button>
-				<button id="static">Start static curve</button>
+				<button class="graphical-btn-red" id="dynamic">Start curve</button>
+				<!-- <button class="graphical-btn-blue" id="static">Start static curve</button> -->
 			</div>
 <!-- 
 			<div class="line-y">Y</div>
@@ -31,6 +31,15 @@
 			</div>
 		</div>
 
+		<div class="popup">
+			<h3>Are you sure to reload ?</h3>
+			<div class="popup-btn">
+				<button class="graphical-btn-blue" id="reload-on">Yes</button>
+				<button class="graphical-btn-red" id="reload-off">No</button>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../assets/jquery/jquery.min.js"></script>
 		<script type="text/javascript" src="../src/dynamic/graphic-dynamic.js"></script>
 		<script type="text/javascript" src="../src/static/graphic-static.js"></script>
 	</body>

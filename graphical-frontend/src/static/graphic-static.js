@@ -1,7 +1,15 @@
 (() => {
-	let i = 0;
+	//get day 
+	let graphicDay = () => {
+		let i = 1;
+		while(i <= 31) {
+			document.querySelector('.days').innerHTML += `<span>${i}</span>`;
+			i++;
+		}
+	}
 	
 	let curveStatic = () => {
+		let i = 0;
 		let chunk = canvas.getContext('2d');
 
 		chunk.beginPath();
@@ -26,8 +34,8 @@
 		chunk.stroke();
 	}
 
-	document.getElementById('static').addEventListener('click', function(e) {
-		setTimeout(curveStatic, 100);
-	});
+	// document.getElementById('static').addEventListener('click', function(e) {
+	// 	setTimeout(curveStatic, 100);
+	// });
 	
 })();

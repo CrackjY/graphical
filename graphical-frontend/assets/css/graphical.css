@@ -12,7 +12,7 @@ canvas {
 div.days {
 	margin: 0 0 10px 0;
 }
-div.days span {
+div.days div {
     margin-left: 19px;
     color: grey;
     font-size: 14px;

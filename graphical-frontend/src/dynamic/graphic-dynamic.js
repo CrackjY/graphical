@@ -3,16 +3,7 @@
 	let btnStart = document.querySelector('.btn-start');
 	let xCount;
 	let yCount;
-	let enabled = true;
-
-	//get day 
-	let graphicDay = () => {
-		let i = 1;
-		while(i <= 31) {
-			document.querySelector('.days').innerHTML += `<span>${i}</span>`;
-			i++;
-		}
-	}
+	let enabled;
 
 	let fetchGraphical = () => {
 
@@ -52,7 +43,7 @@
 						digonal.stroke();
 					}
 
-					// digonal();
+					digonal();
 					curve();
 				}
 
@@ -100,15 +91,58 @@
 		axisX.stroke();
 	}
 
-	if (enabled === true) {
-		document.getElementById('dynamic').addEventListener('click', function(e) {
-			setTimeout(fetchGraphical, 1000);
-		});
-
-		grid();
-		abscissaAxis();
-		// graphicDay();
+	/**
+	 * Use jQuery for animation (Switch my spec)
+	 */
+	let toggleSwitch = ($element) => {
+		if ($element.attr('checked') === 'checked') {
+			enabled = false;
+			$element.removeAttr('checked');
+			$element.removeAttr('style');
+			$element.animate({float: 'left'});
+			$('#dynamic').attr('disabled', 'disabled');
+			return;
+		} else {
+			enabled = true;
+			$element.removeAttr('style');
+			$element.attr( 'checked', 'checked');
+			$element.animate({marginLeft: '44px'}, 700);
+			$('#dynamic').removeAttr('disabled');
+			return;
+		}
 	}
-	
+
+	let toggleOff = ($element) => {
+		
+	}
+
+	$('.sub-chunk').on('click', (e) => {
+		toggleSwitch($('.sub-chunk'));
+
+		if (enabled === true) {
+			$('#dynamic').on('click', (e) => {
+				setTimeout(fetchGraphical, 1000);
+			});
+
+			grid();
+			abscissaAxis();
+		}
+
+		if (enabled == false) {
+
+			$('#reload-off').on('click', () => {
+
+			});
+		}
+		
+
+
+
+
+
+		console.log('enabled : ', enabled);
+
+	});
+		
 })();
 
