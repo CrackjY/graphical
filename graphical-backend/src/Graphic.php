@@ -1,7 +1,7 @@
 <?php
 
 /**
-* @return JsonResponse
+* @return array: json
 */
 class Graphic
 {
